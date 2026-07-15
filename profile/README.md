@@ -1,6 +1,6 @@
 # MaestraAI
 
-MaestraAI gives musicians AI-generated feedback on their practice recordings. Upload a
+MaestraAI gives musicians AI-generated feedback on their practice recordings. This project was designed to fill a large gap between private lessons and student practice habits. Upload a
 score, record yourself playing against it, and get back an analysis of pitch accuracy
 and harmonic context -- turned into human-readable feedback -- to guide your next
 practice session.
