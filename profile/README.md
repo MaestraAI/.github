@@ -7,9 +7,9 @@ practice session.
 
 This is a multi-repo project. Each repository contains detailed READMEs with design decisions (message broker choices, deployment strategies, etc.) and development instructions, and our [Notion space](https://app.notion.com/p/Public-API-39d768a1b93c8154ad73cf3677cface4?source=copy_link) contains architectural design documents, detailing design choices and decisions throughout the development process.
 
-## How it (currently) works
+## Architecture Overview
 
-1. A client uploads a musical score (MusicXML) to the **[maestra-ai-api](https://github.com/maestra-ai/maestra-ai-api)**.
+1. An end user uploads a musical score (MusicXML) to the **[maestra-ai-api](https://github.com/maestra-ai/maestra-ai-api)**.
 2. The API stores the file and publishes an event;
 3. The **Score Analysis Service** receives the message, performs harmonic analysis, calculates the expected pitch (in Hz) of every note, stores the analysis, and publishes a completion message to a queue. 
 5. The client streams a practice recording, send to the the API service in ~15-30 second chunks.
